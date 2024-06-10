@@ -1,5 +1,5 @@
 .header{
-    height: 34vw;
+    height: 35vw;
     margin: 30px auto;
     background: url('header_img.png') no-repeat;
     background-size: contain;
@@ -33,4 +33,38 @@
     background-color: white;
     font-size: max(1vw,13px);
     border-radius: 50px;
+}
+@media (max-width:1050px) {
+    .header-content{
+        max-width:45%
+    }
+}
+@media (max-width:750px) {
+    .header-content{
+        max-width:65%
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}
+@media (max-width:330px) {
+    .header{
+        margin: 20px auto;
+    }
+    .header h2{
+        font-size: large;
+    }
+}
+@media (max-width:280px) {
+    .header h2{
+        font-size: medium;
+    }
+}
+@media (max-width:260px) {
+    .header h2{
+        font-size: small;
+    }
 }
