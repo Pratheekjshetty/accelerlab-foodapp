@@ -58,3 +58,17 @@
     color: tomato;
     background-color:wheat;
 }
+.cart-promocode{
+    flex:1;   
+}
+.cart-promocode p{
+    color:#555;
+}
+.cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
