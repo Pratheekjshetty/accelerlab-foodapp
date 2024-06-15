@@ -85,6 +85,10 @@
     border: none;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
+}
+.cart-promocode-input button:hover{
+    background-color: rgb(60, 60, 60);
 }
 @media (max-width:750px) {
     .cart-bottom{
@@ -92,6 +96,5 @@
     }
     .cart-promocode{
         justify-content: start;
-    }
-    
+    }   
 }
