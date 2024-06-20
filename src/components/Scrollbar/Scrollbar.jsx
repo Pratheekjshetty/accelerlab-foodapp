@@ -2,7 +2,9 @@ import React from 'react'
 
 const Scrollbar = () => {
   return (
-    <div>Scrollbar</div>
+    <div>
+        <h1>Hello</h1>
+    </div>
   )
 }
 
