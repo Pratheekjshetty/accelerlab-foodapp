@@ -11,6 +11,8 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import fruit from './fruit.png'
+import icecream from './icecream.png'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -44,6 +46,18 @@ import food_29 from './food_29.png'
 import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
+import apple from './apple.png'
+import blackcurrant from './blackcurrant.png'
+import chikku from './chikku.png'
+import grape from './grape.png'
+import guava from './guava.png'
+import lemon from './lemon.png'
+import mango from './mango.png'
+import muskmelon from './muskmelon.png'
+import orange from './orange.png'
+import pineapple from './pineapple.png'
+import pomegranate from './pomegranate.png'
+import watermelon from './watermelon.png'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -116,6 +130,14 @@ export const menu_list = [
     {
         menu_name: "Noodles",
         menu_image: menu_8
+    },
+    {
+        menu_name: "Fruit Juice",
+        menu_image: fruit
+    },
+    {
+        menu_name: "Icecream",
+        menu_image: icecream
     }]
 
 export const food_list = [
@@ -348,5 +370,89 @@ export const food_list = [
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
-    }
+    }, {
+        _id: "33",
+        name: "Apple Juice",
+        image: apple,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "34",
+        name: "BlackCurrant Juice",
+        image: blackcurrant,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "35",
+        name: "Chikku Juice",
+        image: chikku,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "36",
+        name: "Grape Juice",
+        image: grape,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "37",
+        name: "Guava Juice",
+        image: guava,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "38",
+        name: "Lemon Juice",
+        image: lemon,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "39",
+        name: "Mango Juice",
+        image: mango,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "40",
+        name: "MuskMelon Juice",
+        image: muskmelon,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "41",
+        name: "Orange Juice",
+        image: orange,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "42",
+        name: "Pineapple Juice",
+        image: pineapple,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "43",
+        name: "Pomegranate Juice",
+        image: pomegranate,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, {
+        _id: "44",
+        name: "WaterMelon Juice",
+        image: watermelon,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Fruit Juice"
+    }, 
 ]
