@@ -45,7 +45,7 @@
     padding: 10px;
     border-radius: 4px;
     color: white;
-    background-color: tomato;
+    background-color: green;
     font-size: 15px;
     cursor: pointer;
 }
@@ -59,7 +59,7 @@
     margin-top: 5px;
 }
 .login p span{
-    color: tomato;
+    color: green;
     font-weight: 500;
     cursor: pointer;
 }

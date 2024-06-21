@@ -44,7 +44,7 @@
 }
 
 .menu-list .active{
-    border: 4px solid tomato;
+    border: 4px solid rgb(220, 220, 4);
     padding: 2px;
 }
 @media (max-width:1050) {

@@ -48,15 +48,15 @@
 .cart-total button{
     border:none;
     color: white;
-    background-color: tomato;
+    background-color: rgb(220, 220, 4);
     width:max(15vw,200px);
     padding: 12px 0px;
     border-radius: 4px;
     cursor: pointer;
 }
 .cart-total button:hover{
-    color: tomato;
-    background-color:wheat;
+    color: rgb(220, 220, 4);
+    background-color:rgb(252, 252, 171);
 }
 .cart-promocode{
     flex:1;   
@@ -81,14 +81,14 @@
 .cart-promocode-input button{
     width: max(10vw,150px);
     padding: 12px 5px;
-    background-color: black;
+    background-color: green;
     border: none;
     color: white;
     border-radius: 4px;
     cursor: pointer;
 }
 .cart-promocode-input button:hover{
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(2, 195, 2);
 }
 @media (max-width:750px) {
     .cart-bottom{
