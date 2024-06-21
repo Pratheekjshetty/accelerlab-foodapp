@@ -60,12 +60,13 @@ import pomegranate from './pomegranate.png'
 import watermelon from './watermelon.png'
 import banana_icecream from './banana-icecream.png'
 import blueberry_icecream from './blueberry-icecream.png'
+import butterscotch_icecream from './butterscotch-icecream.png'
 import chocolate_icecream from './chocolate-icecream.png'
 import dryfruits_icecream from './dryfruits-icecream.png'
 import orange_icecream from './orange-icecream.png'
 import pista_icecream from './pista-icecream.png'
 import strawberry_icecream from './strawberry-icecream.png'
-import vanilla_icecream from './vanilla-icecream.png'
+
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -154,7 +155,7 @@ export const food_list = [
         name: "Greek salad",
         image: food_1,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A refreshing salad with cucumbers, tomatoes, olives, and feta, dressed in olive oil and lemon.",
         category: "Salad"
     },
     {
@@ -162,77 +163,77 @@ export const food_list = [
         name: "Veg salad",
         image: food_2,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A colorful mix of fresh vegetables topped with a light vinaigrette.",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A nutrient-dense salad with clover sprouts, mixed greens, avocado, and a tangy vinaigrette.",
         category: "Salad"
     }, {
         _id: "4",
         name: "Chicken Salad",
         image: food_4,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A hearty salad with chicken, celery, onions, and a creamy dressing.",
         category: "Salad"
     }, {
         _id: "5",
         name: "Lasagna Rolls",
         image: food_5,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Lasagna noodles rolled with ricotta, mozzarella, spinach, and baked in marinara sauce.",
         category: "Rolls"
     }, {
         _id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Spicy rolls filled with chicken or vegetables marinated in tangy Peri Peri sauce.",
         category: "Rolls"
     }, {
         _id: "7",
         name: "Chicken Rolls",
         image: food_7,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Savory rolls with seasoned chicken and vegetables wrapped in flatbread.",
         category: "Rolls"
     }, {
         _id: "8",
         name: "Veg Rolls",
         image: food_8,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Rolls filled with seasoned vegetables wrapped in flatbread.",
         category: "Rolls"
     }, {
         _id: "9",
         name: "Ripple Icecream",
         image: food_9,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Creamy ice cream swirled with vibrant, colorful syrup for a delightful visual and taste.",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Fruit Icecream",
         image: food_10,
         price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Icecream infused with assorted fruit chunks, offering a refreshing and natural sweetness.",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Jar Icecream",
         image: food_11,
         price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Rich and creamy ice cream served in a jar, layered with sauces, fruits, or toppings.",
         category: "Deserts"
     }, {
         _id: "12",
         name: "Vanilla Icecream",
         image: food_12,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Classic and smooth ice cream made with real vanilla beans for a timeless flavor.",
         category: "Deserts"
     },
     {
@@ -240,7 +241,7 @@ export const food_list = [
         name: "Chicken Sandwich",
         image: food_13,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A savory sandwich filled with seasoned chicken, lettuce, and mayo.",
         category: "Sandwich"
     },
     {
@@ -248,77 +249,77 @@ export const food_list = [
         name: "Vegan Sandwich",
         image: food_14,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A hearty sandwich packed with fresh vegetables and plant-based spreads.",
         category: "Sandwich"
     }, {
         _id: "15",
         name: "Grilled Sandwich",
         image: food_15,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A warm, toasted sandwich with melted cheese and your choice of fillings.",
         category: "Sandwich"
     }, {
         _id: "16",
         name: "Bread Sandwich",
         image: food_16,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A simple sandwich with your choice of bread and various fillings.",
         category: "Sandwich"
     }, {
         _id: "17",
         name: "Cup Cake",
         image: food_17,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A small, individual cake topped with frosting and sprinkles.",
         category: "Cake"
     }, {
         _id: "18",
         name: "Vegan Cake",
         image: food_18,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A moist and delicious cake made without any animal products.",
         category: "Cake"
     }, {
         _id: "19",
         name: "Butterscotch Cake",
         image: food_19,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A rich cake flavored with buttery, caramelized butterscotch.",
         category: "Cake"
     }, {
         _id: "20",
         name: "Sliced Cake",
         image: food_20,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A slice of cake with layers of frosting and filling with cream.",
         category: "Cake"
     }, {
         _id: "21",
         name: "Garlic Mushroom ",
         image: food_21,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Savory mushrooms sautéed with garlic and herbs.",
         category: "Pure Veg"
     }, {
         _id: "22",
         name: "Fried Cauliflower",
         image: food_22,
         price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Crispy, battered cauliflower florets fried to golden perfection.",
         category: "Pure Veg"
     }, {
         _id: "23",
         name: "Mix Veg Pulao",
         image: food_23,
         price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A fragrant rice dish cooked with a mix of fresh vegetables and spices.",
         category: "Pure Veg"
     }, {
         _id: "24",
         name: "Rice Zucchini",
         image: food_24,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A light dish made with rice and sautéed zucchini with Egg slice.",
         category: "Pure Veg"
     },
     {
@@ -326,7 +327,7 @@ export const food_list = [
         name: "Cheese Pasta",
         image: food_25,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Creamy pasta generously coated with melted cheese.",
         category: "Pasta"
     },
     {
@@ -334,189 +335,189 @@ export const food_list = [
         name: "Tomato Pasta",
         image: food_26,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Spicy pasta tossed in a rich and tangy tomato sauce.",
         category: "Pasta"
     }, {
         _id: "27",
         name: "Creamy Pasta",
         image: food_27,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Pasta in a velvety, rich cream sauce, often garnished with herbs and cheese.",
         category: "Pasta"
     }, {
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Pasta mixed with tender chicken pieces and a savory sauce.",
         category: "Pasta"
     }, {
         _id: "29",
         name: "Buttter Noodles",
         image: food_29,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Noodles tossed in melted butter for a simple, delicious dish.",
         category: "Noodles"
     }, {
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Stir-fried noodles with a mix of fresh vegetables with chilly sauce.",
         category: "Noodles"
     }, {
         _id: "31",
         name: "Somen Noodles",
         image: food_31,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Thin, delicate Japanese noodles served cold or hot.",
         category: "Noodles"
     }, {
         _id: "32",
         name: "Cooked Noodles",
         image: food_32,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Noodles cooked to perfection and served with your choice of sauce or toppings.",
         category: "Noodles"
     }, {
         _id: "33",
         name: "Apple Juice",
         image: apple,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Refreshing juice made from crisp, pulps of sweet apples.",
         category: "Fruit Juice"
     }, {
         _id: "34",
         name: "Blackcurrant Juice",
         image: blackcurrant,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Tart and tangy juice made from fresh blackcurrants.",
         category: "Fruit Juice"
     }, {
         _id: "35",
         name: "Chikku Juice",
         image: chikku,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Smooth and sweet juice made from ripe chikku (sapodilla) fruit.",
         category: "Fruit Juice"
     }, {
         _id: "36",
         name: "Grape Juice",
         image: grape,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Sweet and flavorful juice made from fresh grapes.",
         category: "Fruit Juice"
     }, {
         _id: "37",
         name: "Guava Juice",
         image: guava,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Tropical juice made from ripe, pulps of aromatic guavas.",
         category: "Fruit Juice"
     }, {
         _id: "38",
         name: "Lemon Juice",
         image: lemon,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Zesty and tangy juice made from fresh lemons with mint leaves.",
         category: "Fruit Juice"
     }, {
         _id: "39",
         name: "Mango Juice",
         image: mango,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Rich and sweet juice made from ripe, juicy mangoes.",
         category: "Fruit Juice"
     }, {
         _id: "40",
         name: "Muskmelon Juice",
         image: muskmelon,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Refreshing juice made from sweet and fragrant muskmelon.",
         category: "Fruit Juice"
     }, {
         _id: "41",
         name: "Orange Juice",
         image: orange,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Classic and tangy juice made from fresh oranges with mint leaves.",
         category: "Fruit Juice"
     }, {
         _id: "42",
         name: "Pineapple Juice",
         image: pineapple,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Tropical and tangy juice made from ripe pineapples.",
         category: "Fruit Juice"
     }, {
         _id: "43",
         name: "Pomegranate Juice",
         image: pomegranate,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Sweet and slightly tart juice made from fresh pomegranates.",
         category: "Fruit Juice"
     }, {
         _id: "44",
         name: "Watermelon Juice",
         image: watermelon,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Refreshing and hydrating juice made from juicy watermelon.",
         category: "Fruit Juice"
     }, {
         _id: "45",
         name: "Banana Icecream",
         image: banana_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Creamy ice cream made with ripe bananas for a naturally sweet and fruity taste.",
         category: "Icecream"
     }, {
         _id: "46",
         name: "Blueberry Icecream",
         image: blueberry_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Ice cream blended with fresh blueberries, providing a sweet and tangy berry flavor.",
         category: "Icecream"
     }, {
         _id: "47",
-        name: "Chocolate Icecream",
-        image: chocolate_icecream,
+        name: "Butterscotch Icecream",
+        image: butterscotch_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Rich and creamy ice cream flavored with buttery, caramelized butterscotch.",
         category: "Icecream"
     }, {
         _id: "48",
-        name: "Dryfruits Icecream",
-        image: dryfruits_icecream,
+        name: "Chocolate Icecream",
+        image: chocolate_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Decadent and rich ice cream made with high-quality cocoa for a luscious chocolate experience.",
         category: "Icecream"
     }, {
         _id: "49",
-        name: "Orange Icecream",
-        image: orange_icecream,
+        name: "Dryfruits Icecream",
+        image: dryfruits_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Creamy ice cream loaded with a mix of crunchy and nutritious dried fruits.",
         category: "Icecream"
     }, {
         _id: "50",
-        name: "Pista Icecream",
-        image: pista_icecream,
+        name: "Orange Icecream",
+        image: orange_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Refreshing ice cream with the bright and tangy flavor of fresh oranges.",
         category: "Icecream"
     }, {
         _id: "51",
-        name: "Strawberry Icecream",
-        image: strawberry_icecream,
+        name: "Pista Icecream",
+        image: pista_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Creamy ice cream infused with the distinct and nutty flavor of pistachios.",
         category: "Icecream"
     }, {
         _id: "52",
-        name: "Vanilla Icecream",
-        image: vanilla_icecream,
+        name: "Strawberry Icecream",
+        image: strawberry_icecream,
         price: 25,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
         category: "Icecream"
     },  
 ]

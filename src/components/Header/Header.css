@@ -1,5 +1,6 @@
 .header{
     height: 35vw;
+    width: 200vh;
     margin: 30px auto;
     background: url('header_img.png') no-repeat;
     background-size: contain;
@@ -33,6 +34,10 @@
     background-color: white;
     font-size: max(1vw,13px);
     border-radius: 50px;
+}
+.header-content button:hover{
+    color:white;
+    background-color: rgb(142, 142, 142);
 }
 @media (max-width:1050px) {
     .header-content{
