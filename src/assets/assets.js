@@ -58,6 +58,14 @@ import orange from './orange.png'
 import pineapple from './pineapple.png'
 import pomegranate from './pomegranate.png'
 import watermelon from './watermelon.png'
+import banana_icecream from './banana-icecream.png'
+import blueberry_icecream from './blueberry-icecream.png'
+import chocolate_icecream from './chocolate-icecream.png'
+import dryfruits_icecream from './dryfruits-icecream.png'
+import orange_icecream from './orange-icecream.png'
+import pista_icecream from './pista-icecream.png'
+import strawberry_icecream from './strawberry-icecream.png'
+import vanilla_icecream from './vanilla-icecream.png'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -200,28 +208,28 @@ export const food_list = [
         category: "Rolls"
     }, {
         _id: "9",
-        name: "Ripple Ice Cream",
+        name: "Ripple Icecream",
         image: food_9,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "10",
-        name: "Fruit Ice Cream",
+        name: "Fruit Icecream",
         image: food_10,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "11",
-        name: "Jar Ice Cream",
+        name: "Jar Icecream",
         image: food_11,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "12",
-        name: "Vanilla Ice Cream",
+        name: "Vanilla Icecream",
         image: food_12,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -379,7 +387,7 @@ export const food_list = [
         category: "Fruit Juice"
     }, {
         _id: "34",
-        name: "BlackCurrant Juice",
+        name: "Blackcurrant Juice",
         image: blackcurrant,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -421,7 +429,7 @@ export const food_list = [
         category: "Fruit Juice"
     }, {
         _id: "40",
-        name: "MuskMelon Juice",
+        name: "Muskmelon Juice",
         image: muskmelon,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -449,10 +457,66 @@ export const food_list = [
         category: "Fruit Juice"
     }, {
         _id: "44",
-        name: "WaterMelon Juice",
+        name: "Watermelon Juice",
         image: watermelon,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Fruit Juice"
-    }, 
+    }, {
+        _id: "45",
+        name: "Banana Icecream",
+        image: banana_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "46",
+        name: "Blueberry Icecream",
+        image: blueberry_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "47",
+        name: "Chocolate Icecream",
+        image: chocolate_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "48",
+        name: "Dryfruits Icecream",
+        image: dryfruits_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "49",
+        name: "Orange Icecream",
+        image: orange_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "50",
+        name: "Pista Icecream",
+        image: pista_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "51",
+        name: "Strawberry Icecream",
+        image: strawberry_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    }, {
+        _id: "52",
+        name: "Vanilla Icecream",
+        image: vanilla_icecream,
+        price: 25,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Icecream"
+    },  
 ]
