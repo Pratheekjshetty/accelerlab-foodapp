@@ -460,7 +460,7 @@ export const food_list = [
         name: "Blackcurrant Juice",
         image: blackcurrant,
         price: 20,
-        description: "Tart and tangy juice made from fresh blackcurrants.",
+        description: "Tart and tangy juice made from fresh pulps of blackcurrants.",
         category: "Fruit Juice"
     }, {
         _id: "43",
@@ -474,7 +474,7 @@ export const food_list = [
         name: "Grape Juice",
         image: grape,
         price: 20,
-        description: "Sweet and flavorful juice made from fresh grapes.",
+        description: "Sweet and flavorful juice made from fresh ripe grapes.",
         category: "Fruit Juice"
     }, {
         _id: "45",
@@ -495,7 +495,7 @@ export const food_list = [
         name: "Mango Juice",
         image: mango,
         price: 20,
-        description: "Rich and sweet juice made from ripe, juicy mangoes.",
+        description: "Rich and sweet juice made from ripe, pulpy juicy mangoes.",
         category: "Fruit Juice"
     }, {
         _id: "48",
@@ -516,7 +516,7 @@ export const food_list = [
         name: "Pineapple Juice",
         image: pineapple,
         price: 20,
-        description: "Tropical and tangy juice made from ripe pineapples.",
+        description: "Tropical and tangy juice made from ripe pulpy pineapples.",
         category: "Fruit Juice"
     }, {
         _id: "51",
