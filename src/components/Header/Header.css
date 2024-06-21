@@ -2,6 +2,7 @@
     height: 35vw;
     width: 200vh;
     margin: 30px auto;
+    border-radius: 10px;
     background: url('header_img.png') no-repeat;
     background-size: contain;
     position: relative;

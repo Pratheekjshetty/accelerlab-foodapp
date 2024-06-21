@@ -7,7 +7,8 @@ const Footer = () => {
         <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo1} alt="" width={100}/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standurd dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Welcome to Festly App, where we bring the best flavors from local restaurants right to your doorstep. Discover a world of delicious options and enjoy convenient 
+                delivery with every order. Delivering delicious meals from your favorite local restaurants straight to your door. Our mission is to make food delivery quick, easy, and enjoyable.</p>
             <div className="footer-social-icons">
                 <img src="{assets.facebook_icon}" alt="" />
                 <img src="{assets.twitter_icon}" alt="" />
@@ -20,19 +21,31 @@ const Footer = () => {
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Delivery</li>
+            </ul>
+            <h2>Legal</h2>
+            <ul>
                 <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Refund Policy</li>
             </ul>
         </div>
         <div className="footer-content-right">
-            <h2>Get In Touch</h2>
+            <h2>Contact Us</h2>
             <ul>
-                <li>+9876543210</li>
-                <li>contact@gmail.com</li>
+                <li>Phone:+9876543210</li>
+                <li>Email:festlyapp@gmail.com</li>
+                <li>Github:github.com/festlyapp</li>
+            </ul>
+            <h2>Follow Us</h2>
+            <ul>
+                <li>Facebook:facebook.com/festlyapp</li>
+                <li>Instagram:instagram.com/festlyapp</li>
+                <li>Twitter:twitter.com/festlyapp</li>
             </ul>
         </div>
         </div>
         <hr/>
-        <p className='footer-copyright'> © Copright 2024 Tomato.com - All Right Reserved.</p>
+        <p className='footer-copyright'> © Copright 2024 Festly.com - All Right Reserved.</p>
     </div>
   )
 }
