@@ -1,7 +1,4 @@
-import foodModel from '../models/foodModel.js'
-import fs from 'fs'
-
-//add food item
+import foodModel from '../models/foodModels.js'
 const addFood = async(req,res)=>{
 
     let image_filename = `${req.file.filename}`;
@@ -15,7 +12,7 @@ const addFood = async(req,res)=>{
     })
     try{
         await food.save();
-        res.json({success:true,message:"Food Added"})
+        res.json({success:true,message:"Food Added"});
     } catch(err){
         console.log(err)
         res.json({success:false,message:"Error"})
