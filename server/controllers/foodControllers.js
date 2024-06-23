@@ -1,4 +1,5 @@
 import foodModel from '../models/foodModels.js'
+//add food
 const addFood = async(req,res)=>{
 
     let image_filename = `${req.file.filename}`;
@@ -18,4 +19,17 @@ const addFood = async(req,res)=>{
         res.json({success:false,message:"Error"})
     }
 }
-export {addFood}
+//list food
+const listFood =async(req,res)=>{
+    try{
+        const foods=await foodModel.find({});
+        res.json({success:true,data:foods})
+    }
+    catch(err){
+        console.log(err)
+        res.json({success:false,message:"Error"})
+
+    }
+
+}
+export {addFood,listFood}
