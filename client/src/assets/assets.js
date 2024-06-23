@@ -11,9 +11,9 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
-import chats from './Chats.png' 
-import fruit from './fruit.png'
-import icecream from './icecream.png'
+import menu_9 from './menu_9.png' 
+import menu_10 from './menu_10.png'
+import menu_11 from './menu_11.png'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -151,15 +151,15 @@ export const menu_list = [
     },
     {
         menu_name: "Chats",
-        menu_image: chats
+        menu_image: menu_9
     },
     {
         menu_name: "Fruit Juice",
-        menu_image: fruit
+        menu_image: menu_10
     },
     {
         menu_name: "Icecream",
-        menu_image: icecream
+        menu_image: menu_11
     }]
 
 export const food_list = [
