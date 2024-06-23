@@ -2,9 +2,7 @@ import foodModel from '../models/foodModels.js'
 import fs from 'fs'
 //add food
 const addFood = async(req,res)=>{
-
     let image_filename = `${req.file.filename}`;
-
     const food = new foodModel({
         name:req.body.name,
         description:req.body.description,
@@ -29,9 +27,7 @@ const listFood =async(req,res)=>{
     catch(err){
         console.log(err)
         res.json({success:false,message:"Error"})
-
     }
-
 }
 //remove food
 const removeFood=async(req,res)=>{
