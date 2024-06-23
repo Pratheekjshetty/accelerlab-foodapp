@@ -3,6 +3,7 @@ import cors from 'cors'
 import connectDB from './helper/db.js'
 import foodRouter from './routers/foodRoutes.js'
 import userRouter from './routers/userRoutes.js'
+import 'dotenv/config'
 
 //app config
 const app=express()
