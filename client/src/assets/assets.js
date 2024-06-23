@@ -75,6 +75,14 @@ import food_57 from './food_57.png'
 import food_58 from './food_58.png'
 import food_59 from './food_59.png'
 import food_60 from './food_60.png'
+import food_61 from './food_61.png'
+import food_62 from './food_62.png'
+import food_63 from './food_63.png'
+import food_64 from './food_64.png'
+import food_65 from './food_65.png'
+import food_66 from './food_66.png'
+import food_67 from './food_67.png'
+import food_68 from './food_68.png'
 
 
 import add_icon_white from './add_icon_white.png'
@@ -591,5 +599,62 @@ export const food_list = [
         price: 25,
         description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
         category: "Icecream"
-    },  
+    }, {
+        _id: "61",
+        name: "Cappuccino",
+        image: food_61,
+        price: 22,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "62",
+        name: "Cold Brew",
+        image: food_62,
+        price: 22,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "63",
+        name: "Espresso",
+        image: food_63,
+        price: 22,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "64",
+        name: "Mocha",
+        image: food_64,
+        price: 22,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    },{
+        _id: "65",
+        name: "Iced-Coffee",
+        image: food_65,
+        price: 22,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "66",
+        name: "Green-Tea",
+        image: food_66,
+        price: 20,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "67",
+        name: "Herbal-Tea",
+        image: food_67,
+        price: 20,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, {
+        _id: "68",
+        name: "Simple-Tea",
+        image: food_68,
+        price: 15,
+        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        category: "Coffee&Tea"
+    }, 
+
 ]

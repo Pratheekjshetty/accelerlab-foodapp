@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo1} alt="" width={100}/>
+            <img src={assets.logo} alt="" width={100}/>
             <p>Welcome to Festly App, where we bring the best flavors from local restaurants right to your doorstep. Discover a world of delicious options and enjoy convenient 
                 delivery with every order. Delivering delicious meals from your favorite local restaurants straight to your door. Our mission is to make food delivery quick, easy, and enjoyable.</p>
             <div className="footer-social-icons">
