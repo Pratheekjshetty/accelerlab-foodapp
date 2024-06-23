@@ -1,6 +1,5 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.png'
-import logo1 from './logo1.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
@@ -47,34 +46,34 @@ import food_29 from './food_29.png'
 import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
-import belpuri from './Belpuri.png'
-import dahipuri from './Dahipuri.png'
-import masalpuri from './Masalpuri.png'
-import panipuri from './Panipuri.png'
-import sevpuri from './Sevpuri.png'
-import momos from './Momos.png'
-import pakoda from './Onion-Pakoda.png'
-import samosa from './Samosa.png'
-import apple from './apple.png'
-import blackcurrant from './blackcurrant.png'
-import chikku from './chikku.png'
-import grape from './grape.png'
-import guava from './guava.png'
-import lemon from './lemon.png'
-import mango from './mango.png'
-import muskmelon from './muskmelon.png'
-import orange from './orange.png'
-import pineapple from './pineapple.png'
-import pomegranate from './pomegranate.png'
-import watermelon from './watermelon.png'
-import banana_icecream from './banana-icecream.png'
-import blueberry_icecream from './blueberry-icecream.png'
-import butterscotch_icecream from './butterscotch-icecream.png'
-import chocolate_icecream from './chocolate-icecream.png'
-import dryfruits_icecream from './dryfruits-icecream.png'
-import orange_icecream from './orange-icecream.png'
-import pista_icecream from './pista-icecream.png'
-import strawberry_icecream from './strawberry-icecream.png'
+import food_33 from './food_33.png'
+import food_34 from './food_34.png'
+import food_35 from './food_35.png'
+import food_36 from './food_36.png'
+import food_37 from './food_37.png'
+import food_38 from './food_38.png'
+import food_39 from './food_39.png'
+import food_40 from './food_40.png'
+import food_41 from './food_41.png'
+import food_42 from './food_42.png'
+import food_43 from './food_43.png'
+import food_44 from './food_44.png'
+import food_45 from './food_45.png'
+import food_46 from './food_46.png'
+import food_47 from './food_47.png'
+import food_48 from './food_48.png'
+import food_49 from './food_49.png'
+import food_50 from './food_50.png'
+import food_51 from './food_51.png'
+import food_52 from './food_52.png'
+import food_53 from './food_53.png'
+import food_54 from './food_54.png'
+import food_55 from './food_55.png'
+import food_56 from './food_56.png'
+import food_57 from './food_57.png'
+import food_58 from './food_58.png'
+import food_59 from './food_59.png'
+import food_60 from './food_60.png'
 
 
 import add_icon_white from './add_icon_white.png'
@@ -95,7 +94,6 @@ import parcel_icon from './parcel_icon.png'
 
 export const assets = {
     logo,
-    logo1,
     basket_icon,
     header_img,
     search_icon,
@@ -395,196 +393,196 @@ export const food_list = [
     },{
         _id: "33",
         name: "Belpuri",
-        image: belpuri,
+        image: food_33,
         price: 22,
         description: "A tangy and spicy mix of puffed rice, vegetables, and tamarind sauce.",
         category: "Chats"
     },{
         _id: "34",
         name: "Dahipuri",
-        image: dahipuri,
+        image: food_34,
         price: 22,
         description: "Crispy puris filled with spiced potatoes, yogurt,curd and chutneys.",
         category: "Chats"
     },{
         _id: "35",
         name: "Masalpuri",
-        image: masalpuri,
+        image: food_35,
         price: 22,
         description: "A flavorful snack with crushed puris topped with spicy masala, peas, and chutneys.",
         category: "Chats"
     },{
         _id: "36",
         name: "Panipuri",
-        image: panipuri,
+        image: food_36,
         price: 22,
         description: "Hollow puris filled with spicy tamarind water, potatoes, and chickpeas.",
         category: "Chats"
     },{
         _id: "37",
         name: "Sevpuri",
-        image: sevpuri,
+        image: food_37,
         price: 22,
         description: "Crispy puris topped with diced potatoes, chutneys, and crunchy sev.",
         category: "Chats"
     },{
         _id: "38",
         name: "Momos",
-        image: momos,
+        image: food_38,
         price: 25,
         description: "Steamed or fried dumplings filled with vegetables or meat, served with spicy dipping sauce.",
         category: "Chats"
     },{
         _id: "39",
         name: "Onion-Pakoda",
-        image: pakoda,
+        image: food_39,
         price: 12,
         description: "Deep-fried fritters made with sliced onions coated in a spiced chickpea flour batter.",
         category: "Chats"
     },{
         _id: "40",
         name: "Samosa",
-        image: samosa,
+        image: food_40,
         price: 15,
         description: "Deep-fried pastry filled with spiced potatoes, peas, and sometimes meat.",
         category: "Chats"
     }, {
         _id: "41",
         name: "Apple Juice",
-        image: apple,
+        image: food_41,
         price: 20,
         description: "Refreshing juice made from crisp, pulps of sweet apples.",
         category: "Fruit Juice"
     }, {
         _id: "42",
         name: "Blackcurrant Juice",
-        image: blackcurrant,
+        image: food_42,
         price: 20,
         description: "Tart and tangy juice made from fresh pulps of blackcurrants.",
         category: "Fruit Juice"
     }, {
         _id: "43",
         name: "Chikku Juice",
-        image: chikku,
+        image: food_43,
         price: 20,
         description: "Smooth and sweet juice made from ripe chikku (sapodilla) fruit.",
         category: "Fruit Juice"
     }, {
         _id: "44",
         name: "Grape Juice",
-        image: grape,
+        image: food_44,
         price: 20,
         description: "Sweet and flavorful juice made from fresh ripe grapes.",
         category: "Fruit Juice"
     }, {
         _id: "45",
         name: "Guava Juice",
-        image: guava,
+        image: food_45,
         price: 20,
         description: "Tropical juice made from ripe, pulps of aromatic guavas.",
         category: "Fruit Juice"
     }, {
         _id: "46",
         name: "Lemon Juice",
-        image: lemon,
+        image: food_46,
         price: 20,
         description: "Zesty and tangy juice made from fresh lemons with mint leaves.",
         category: "Fruit Juice"
     }, {
         _id: "47",
         name: "Mango Juice",
-        image: mango,
+        image: food_47,
         price: 20,
         description: "Rich and sweet juice made from ripe, pulpy juicy mangoes.",
         category: "Fruit Juice"
     }, {
         _id: "48",
         name: "Muskmelon Juice",
-        image: muskmelon,
+        image: food_48,
         price: 20,
         description: "Refreshing juice made from sweet and fragrant muskmelon.",
         category: "Fruit Juice"
     }, {
         _id: "49",
         name: "Orange Juice",
-        image: orange,
+        image: food_49,
         price: 20,
         description: "Classic and tangy juice made from fresh oranges with mint leaves.",
         category: "Fruit Juice"
     }, {
         _id: "50",
         name: "Pineapple Juice",
-        image: pineapple,
+        image: food_50,
         price: 20,
         description: "Tropical and tangy juice made from ripe pulpy pineapples.",
         category: "Fruit Juice"
     }, {
         _id: "51",
         name: "Pomegranate Juice",
-        image: pomegranate,
+        image: food_51,
         price: 20,
         description: "Sweet and slightly tart juice made from fresh pomegranates.",
         category: "Fruit Juice"
     }, {
         _id: "52",
         name: "Watermelon Juice",
-        image: watermelon,
+        image: food_52,
         price: 20,
         description: "Refreshing and hydrating juice made from juicy watermelon.",
         category: "Fruit Juice"
     }, {
         _id: "53",
         name: "Banana Icecream",
-        image: banana_icecream,
+        image: food_53,
         price: 25,
         description: "Creamy ice cream made with ripe bananas for a naturally sweet and fruity taste.",
         category: "Icecream"
     }, {
         _id: "54",
         name: "Blueberry Icecream",
-        image: blueberry_icecream,
+        image: food_54,
         price: 25,
         description: "Ice cream blended with fresh blueberries, providing a sweet and tangy berry flavor.",
         category: "Icecream"
     }, {
         _id: "55",
         name: "Butterscotch Icecream",
-        image: butterscotch_icecream,
+        image: food_55,
         price: 25,
         description: "Rich and creamy ice cream flavored with buttery, caramelized butterscotch.",
         category: "Icecream"
     }, {
         _id: "56",
         name: "Chocolate Icecream",
-        image: chocolate_icecream,
+        image: food_56,
         price: 25,
         description: "Decadent and rich ice cream made with high-quality cocoa for a luscious chocolate experience.",
         category: "Icecream"
     }, {
         _id: "57",
         name: "Dryfruits Icecream",
-        image: dryfruits_icecream,
+        image: food_57,
         price: 25,
         description: "Creamy ice cream loaded with a mix of crunchy and nutritious dried fruits.",
         category: "Icecream"
     }, {
         _id: "58",
         name: "Orange Icecream",
-        image: orange_icecream,
+        image: food_58,
         price: 25,
         description: "Refreshing ice cream with the bright and tangy flavor of fresh oranges.",
         category: "Icecream"
     }, {
         _id: "59",
         name: "Pista Icecream",
-        image: pista_icecream,
+        image: food_59,
         price: 25,
         description: "Creamy ice cream infused with the distinct and nutty flavor of pistachios.",
         category: "Icecream"
     }, {
         _id: "60",
         name: "Strawberry Icecream",
-        image: strawberry_icecream,
+        image: food_60,
         price: 25,
         description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
         category: "Icecream"
