@@ -604,57 +604,56 @@ export const food_list = [
         name: "Cappuccino",
         image: food_61,
         price: 22,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: " A rich espresso-based drink topped with steamed milk foam.",
         category: "Coffee&Tea"
     }, {
         _id: "62",
         name: "Cold Brew",
         image: food_62,
         price: 22,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "Coffee brewed with cold water over an extended period, served chilled.",
         category: "Coffee&Tea"
     }, {
         _id: "63",
         name: "Espresso",
         image: food_63,
         price: 22,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "A concentrated coffee shot brewed by forcing hot water through finely-ground coffee beans.",
         category: "Coffee&Tea"
     }, {
         _id: "64",
         name: "Mocha",
         image: food_64,
         price: 22,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "A chocolate-flavored coffee drink combining espresso, steamed milk, and chocolate syrup.",
         category: "Coffee&Tea"
     },{
         _id: "65",
         name: "Iced-Coffee",
         image: food_65,
         price: 22,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "Regular brewed coffee with chocolate-flavored served over ice.",
         category: "Coffee&Tea"
     }, {
         _id: "66",
         name: "Green-Tea",
         image: food_66,
         price: 20,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "A tea made from unoxidized Camellia sinensis leaves, offering a light, fresh flavor.",
         category: "Coffee&Tea"
     }, {
         _id: "67",
         name: "Herbal-Tea",
         image: food_67,
         price: 20,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "A caffeine-free infusion made from various herbs, flowers, and spices.",
         category: "Coffee&Tea"
     }, {
         _id: "68",
         name: "Simple-Tea",
         image: food_68,
         price: 15,
-        description: "Sweet and creamy ice cream made with real strawberries for a fruity delight.",
+        description: "Traditional tea brewed from cured tea leaves, typically served hot.",
         category: "Coffee&Tea"
     }, 
-
 ]
