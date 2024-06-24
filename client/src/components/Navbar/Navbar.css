@@ -53,6 +53,38 @@
     top:-8px;
     right: -8px;
 }
+.navbar-profile{
+    position: relative;
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display:none;
+    right:0;
+    z-index:1;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    background-color:rgb(254, 254, 180);
+    padding:12px 25px;
+    border-radius: 4px;
+    border:1px solid green;
+    outline:2px solid white;
+    list-style:none;
+}
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navbar-profile-dropdown img{
+    width:20px;
+}
+.navbar-profile-dropdown li:hover{
+    color:rgb(220, 220, 4);
+}
 @media (max-width:1050px) {
     .navbar.logo{
         width: 140px;
