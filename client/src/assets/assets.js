@@ -604,7 +604,7 @@ export const food_list = [
         name: "Cappuccino",
         image: food_61,
         price: 22,
-        description: " A rich espresso-based drink topped with steamed milk foam.",
+        description: "A rich espresso-based drink topped with steamed milk foam.",
         category: "Coffee&Tea"
     }, {
         _id: "62",
