@@ -13,6 +13,20 @@
 .list-table-format img{
     width:50px;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.page-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.page-button.active {
+    font-weight: bold;
+    text-decoration: underline;
+} 
 @media(max-width:600px){
     .list-table-format{
         grid-template-columns: 1fr 3fr 1fr;

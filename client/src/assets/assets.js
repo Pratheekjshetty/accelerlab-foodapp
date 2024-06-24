@@ -178,7 +178,7 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: 12,
+        price: 15,
         description: "A refreshing salad with cucumbers, tomatoes, olives, and feta, dressed in olive oil and lemon.",
         category: "Salad"
     },
@@ -186,35 +186,35 @@ export const food_list = [
         _id: "2",
         name: "Veg salad",
         image: food_2,
-        price: 18,
+        price: 15,
         description: "A colorful mix of fresh vegetables topped with a light vinaigrette.",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
-        price: 16,
+        price: 15,
         description: "A nutrient-dense salad with clover sprouts, mixed greens, avocado, and a tangy vinaigrette.",
         category: "Salad"
     }, {
         _id: "4",
         name: "Chicken Salad",
         image: food_4,
-        price: 24,
+        price: 20,
         description: "A hearty salad with chicken, celery, onions, and a creamy dressing.",
         category: "Salad"
     }, {
         _id: "5",
         name: "Lasagna Rolls",
         image: food_5,
-        price: 14,
+        price: 15,
         description: "Lasagna noodles rolled with ricotta, mozzarella, spinach, and baked in marinara sauce.",
         category: "Rolls"
     }, {
         _id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
-        price: 12,
+        price: 15,
         description: "Spicy rolls filled with chicken or vegetables marinated in tangy Peri Peri sauce.",
         category: "Rolls"
     }, {
@@ -235,28 +235,28 @@ export const food_list = [
         _id: "9",
         name: "Ripple Icecream",
         image: food_9,
-        price: 14,
+        price: 20,
         description: "Creamy ice cream swirled with vibrant, colorful syrup for a delightful visual and taste.",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Fruit Icecream",
         image: food_10,
-        price: 22,
+        price: 25,
         description: "Icecream infused with assorted fruit chunks, offering a refreshing and natural sweetness.",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Jar Icecream",
         image: food_11,
-        price: 10,
+        price: 20,
         description: "Rich and creamy ice cream served in a jar, layered with sauces, fruits, or toppings.",
         category: "Deserts"
     }, {
         _id: "12",
         name: "Vanilla Icecream",
         image: food_12,
-        price: 12,
+        price: 25,
         description: "Classic and smooth ice cream made with real vanilla beans for a timeless flavor.",
         category: "Deserts"
     },
@@ -264,7 +264,7 @@ export const food_list = [
         _id: "13",
         name: "Chicken Sandwich",
         image: food_13,
-        price: 12,
+        price: 20,
         description: "A savory sandwich filled with seasoned chicken, lettuce, and mayo.",
         category: "Sandwich"
     },
@@ -272,35 +272,35 @@ export const food_list = [
         _id: "14",
         name: "Vegan Sandwich",
         image: food_14,
-        price: 18,
+        price: 20,
         description: "A hearty sandwich packed with fresh vegetables and plant-based spreads.",
         category: "Sandwich"
     }, {
         _id: "15",
         name: "Grilled Sandwich",
         image: food_15,
-        price: 16,
+        price: 20,
         description: "A warm, toasted sandwich with melted cheese and your choice of fillings.",
         category: "Sandwich"
     }, {
         _id: "16",
         name: "Bread Sandwich",
         image: food_16,
-        price: 24,
+        price: 20,
         description: "A simple sandwich with your choice of bread and various fillings.",
         category: "Sandwich"
     }, {
         _id: "17",
         name: "Cup Cake",
         image: food_17,
-        price: 14,
+        price: 15,
         description: "A small, individual cake topped with frosting and sprinkles.",
         category: "Cake"
     }, {
         _id: "18",
         name: "Vegan Cake",
         image: food_18,
-        price: 12,
+        price: 20,
         description: "A moist and delicious cake made without any animal products.",
         category: "Cake"
     }, {
@@ -321,28 +321,28 @@ export const food_list = [
         _id: "21",
         name: "Garlic Mushroom ",
         image: food_21,
-        price: 14,
+        price: 15,
         description: "Savory mushrooms sautéed with garlic and herbs.",
         category: "Pure Veg"
     }, {
         _id: "22",
         name: "Fried Cauliflower",
         image: food_22,
-        price: 22,
+        price: 20,
         description: "Crispy, battered cauliflower florets fried to golden perfection.",
         category: "Pure Veg"
     }, {
         _id: "23",
         name: "Mix Veg Pulao",
         image: food_23,
-        price: 10,
+        price: 15,
         description: "A fragrant rice dish cooked with a mix of fresh vegetables and spices.",
         category: "Pure Veg"
     }, {
         _id: "24",
         name: "Rice Zucchini",
         image: food_24,
-        price: 12,
+        price: 20,
         description: "A light dish made with rice and sautéed zucchini with Egg slice.",
         category: "Pure Veg"
     },
@@ -350,7 +350,7 @@ export const food_list = [
         _id: "25",
         name: "Cheese Pasta",
         image: food_25,
-        price: 12,
+        price: 15,
         description: "Creamy pasta generously coated with melted cheese.",
         category: "Pasta"
     },
@@ -358,35 +358,35 @@ export const food_list = [
         _id: "26",
         name: "Tomato Pasta",
         image: food_26,
-        price: 18,
+        price: 20,
         description: "Spicy pasta tossed in a rich and tangy tomato sauce.",
         category: "Pasta"
     }, {
         _id: "27",
         name: "Creamy Pasta",
         image: food_27,
-        price: 16,
+        price: 15,
         description: "Pasta in a velvety, rich cream sauce, often garnished with herbs and cheese.",
         category: "Pasta"
     }, {
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
-        price: 24,
+        price: 25,
         description: "Pasta mixed with tender chicken pieces and a savory sauce.",
         category: "Pasta"
     }, {
         _id: "29",
         name: "Buttter Noodles",
         image: food_29,
-        price: 14,
+        price: 20,
         description: "Noodles tossed in melted butter for a simple, delicious dish.",
         category: "Noodles"
     }, {
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
-        price: 12,
+        price: 15,
         description: "Stir-fried noodles with a mix of fresh vegetables with chilly sauce.",
         category: "Noodles"
     }, {
@@ -407,7 +407,7 @@ export const food_list = [
         _id: "33",
         name: "Belpuri",
         image: food_33,
-        price: 22,
+        price: 20,
         description: "A tangy and spicy mix of puffed rice, vegetables, and tamarind sauce.",
         category: "Chats"
     },{
