@@ -10,9 +10,9 @@ const Footer = () => {
             <p>Welcome to Festly App, where we bring the best flavors from local restaurants right to your doorstep. Discover a world of delicious options and enjoy convenient 
                 delivery with every order. Delivering delicious meals from your favorite local restaurants straight to your door. Our mission is to make food delivery quick, easy, and enjoyable.</p>
             <div className="footer-social-icons">
-                <img src="{assets.facebook_icon}" alt="" />
-                <img src="{assets.twitter_icon}" alt="" />
-                <img src="{assets.linkedin_icon}" alt="" />
+                <img src={assets.facebook_icon} alt="" />
+                <img src={assets.twitter_icon} alt="" />
+                <img src={assets.linkedin_icon} alt="" />
             </div>
         </div>
         <div className="footer-content-center">
