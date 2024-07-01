@@ -36,7 +36,6 @@ const Login = ({setShowLogin}) => {
         else{
             alert(response.data.message);
         }
-
     }
     // useEffect(()=>{
     //     console.log(data);
