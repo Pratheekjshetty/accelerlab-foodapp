@@ -63,4 +63,9 @@ const verifyOrder = async(req,res)=>{
     }
 }
 
-export {placeOrder,verifyOrder}
+//user orders for frontend
+const userOrders = async (req,res)=>{
+    
+}
+
+export {placeOrder,verifyOrder,userOrders}
