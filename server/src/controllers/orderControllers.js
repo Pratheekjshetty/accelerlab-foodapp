@@ -41,7 +41,7 @@ const placeOrder = async (req,res)=>{
     }
     catch(err){
         console.error(err);
-        res.status(500).json({ success: false, message: "Order Creation Error" });
+        res.json({ success: false, message: "Order Creation Error" });
     }
 }
 const verifyOrder = async(req,res)=>{
