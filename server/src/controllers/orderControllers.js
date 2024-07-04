@@ -9,7 +9,7 @@ const razorpay = new Razorpay({
 
 //placing user order for frontend
 const placeOrder = async (req,res)=>{
-    const frontend_url = "http://localhost:3001"
+    const frontend_url = "http://localhost:3000"
     try{
         const newOrder =new orderModel({
             userId:req.body.userId,

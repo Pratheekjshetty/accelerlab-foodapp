@@ -4,6 +4,9 @@ import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext';
 const FoodItem = ({id,name,price,description,image}) => {
   const {cartItems,addToCart,removeFromCart,url}=useContext(StoreContext);
+  if (!cartItems || !addToCart || !removeFromCart || !url) {
+    return <div>Error: Context values are not available</div>;
+  }
   return (
     <div className="food-item">
         <div className='food-item-image-container'>
