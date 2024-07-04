@@ -1,24 +1,44 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import './Order.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { assets } from '../../assets/assets';
 const Order = ({url}) => {
   const [orders,setOrders] = useState([]);
-  
-  useEffect(()=>{
-    const fetchAllOrders =async()=>{
-      const response = await axios.get(url+"/api/order/list");
-      if(response.data.success){
+
+  const fetchAllOrders =useCallback(async()=>{
+    try {
+      const response = await axios.get(url + "/api/order/list");
+      if (response.data.success) {
         setOrders(response.data.data);
         console.log(response.data.data);
+      } else {
+        toast.error("Failed to fetch orders");
       }
-      else{
-        toast.error("Error")
-      }
+    } catch (err) {
+      toast.error("An error occurred while fetching orders");
+      console.error(err);
     }
+  },[url]);
+  const statusHandler = async (event,orderId)=>{
+    try {
+      const response = await axios.post(url + "/api/order/status", {
+        orderId,
+        status: event.target.value
+      });
+      if (response.data.success) {
+        await fetchAllOrders();
+      } else {
+        toast.error("Failed to update order status");
+      }
+    } catch (error) {
+      toast.error("An error occurred while updating order status");
+      console.error(error);
+    }
+  };
+  useEffect(()=>{
     fetchAllOrders();
-  },[url])
+  },[fetchAllOrders]);
   return (
     <div className='order add'>
       <h3>Order Page</h3>
@@ -46,7 +66,7 @@ const Order = ({url}) => {
             </div>
             <p>Items : {order.items.length}</p>
             <p>Rs.{order.amount}</p>
-            <select>
+            <select onChange={(event)=>statusHandler(event,order._id)} value={order.status}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for Delivery">Out for Delivery</option>
               <option value="Delivered">Delivered</option>
