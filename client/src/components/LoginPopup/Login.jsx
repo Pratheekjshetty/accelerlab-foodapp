@@ -3,6 +3,8 @@ import './Login.css'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+
 const Login = ({setShowLogin}) => {
 
     const {url,setToken} = useContext(StoreContext)
@@ -12,6 +14,9 @@ const Login = ({setShowLogin}) => {
         email:"",
         password:""
     })
+
+    const navigate = useNavigate();
+
     const onChangeHandler =(event)=>{
         const name = event.target.name;
         const value = event.target.value;
@@ -31,7 +36,14 @@ const Login = ({setShowLogin}) => {
         if(response.data.success){
             setToken(response.data.token);
             localStorage.setItem("token",response.data.token)
-            setShowLogin(false)
+
+            if (response.data.role === 'admin') {
+                window.location.href = 'http://localhost:3001/';
+            }
+            else{
+                setShowLogin(false)
+                navigate('/');
+            }
         }
         else{
             alert(response.data.message);
