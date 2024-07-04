@@ -3,13 +3,13 @@ import './MyOrders.css'
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
 import { assets } from '../../assets/assets';
+import { useCallback } from 'react';
 
 const MyOrders = () => {
     const {url,token} = useContext(StoreContext);
     const [data,setData] = useState([]);
 
-    useEffect(()=>{
-    const fetchOrders = async ()=>{
+    const fetchOrders = useCallback(async ()=>{
         try{
             const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});
             setData(response.data.data);
@@ -17,11 +17,11 @@ const MyOrders = () => {
         catch(err){
             console.log(err);
         }    
-    };
-        if(token && url){
-            fetchOrders();
-        }
-    },[token,url]);
+    },[url, token]);
+    
+    useEffect(()=>{
+        fetchOrders();
+        },[fetchOrders]);
   return (
     <div className='my-orders'>
         <h2>My Orders</h2>
@@ -41,7 +41,7 @@ const MyOrders = () => {
                         <p>Rs.{order.amount}.00</p>
                         <p>Items:{order.items.length}</p>
                         <p><span>&#x25cf;</span> <b>{order.status}</b></p>
-                        <button>Track Order</button>
+                        <button onClick={fetchOrders}>Track Order</button>
                     </div>
                 )
             })}
