@@ -2,6 +2,7 @@ import React, {  useContext, useState } from 'react'
 import './Login.css'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext'
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 
@@ -17,11 +18,15 @@ const Login = ({setShowLogin}) => {
 
     const navigate = useNavigate();
 
+    const [showPassword, setShowPassword] = useState(false);
     const onChangeHandler =(event)=>{
         const name = event.target.name;
         const value = event.target.value;
         setData(data=>({...data,[name]:value}))
     }
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+      };
     const onLogin =async(event) =>{
         event.preventDefault()
         let newUrl = url;
@@ -62,7 +67,12 @@ const Login = ({setShowLogin}) => {
             <div className="login-inputs">
                 {currState==="Login"?<></>:<input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Your Name' required/>}  
                 <input name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Your Email'required/>
-                <input name='password' onChange={onChangeHandler} value={data.password} type="password" placeholder='Password'required/>
+                <div style={{ position: 'relative', display: 'inline-block', width: '100%' }}>
+                    <input name='password' onChange={onChangeHandler} value={data.password} type={showPassword?"text":"password"} placeholder='Password'required style={{ width: '100%', paddingRight: '40px' }}/>
+                    <span onClick={togglePasswordVisibility} style={{position: 'absolute',right: 10,top: '50%',transform: 'translateY(-50%)',cursor: 'pointer'}}>
+                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </span>
+                </div>
             </div>
             <button type='submit'>{currState==="Sign Up"?"Sign Up":"Login"}</button>
             <div className="login-condition">
