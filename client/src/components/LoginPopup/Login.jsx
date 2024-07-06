@@ -43,7 +43,7 @@ const Login = ({setShowLogin}) => {
             localStorage.setItem("token",response.data.token)
 
             if (response.data.role === 'admin') {
-                window.location.href = 'http://localhost:3001/';
+                window.open('http://localhost:3001/', '_blank');
             }
             else{
                 setShowLogin(false)
