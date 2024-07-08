@@ -34,6 +34,10 @@
     flex-direction: column;
     gap: 20px;
 }
+.profile-image{
+    width: 120px;
+    border-radius: 8px;
+}
 .login-inputs input{
     outline: none;
     border: 1px solid #c9c9c9;
