@@ -38,14 +38,16 @@ const loginUser =async(req,res)=>{
 
         //create a token before login
         const token =createToken(user._id);
-        res.json({success:true, token, role:user.role })
+        // include the image URL in the response
+        const imageURL = user.image ? path.join('user-uploads', path.basename(user.image)) : null;
+
+        res.json({success:true, token, role:user.role,image: imageURL})
 
     }catch(err){
         console.log(err);
         return res.status(500).json({success:false,message:"Error"})
     }
 }
-
 
 //register user
 const registerUser =async(req,res)=>{
@@ -85,11 +87,11 @@ const registerUser =async(req,res)=>{
         const token = createToken(user._id)
         // include the image URL in the response
         const imageURL = user.image ? path.join('user-uploads', path.basename(user.image)) : null;
-        res.json({success:true, token, role: user.role})
+        res.json({success:true, token, role: user.role,image: imageURL})
 
     }catch(err){
         console.log(err);
-        res.json({success:false,message:"Error"})
+        res.status(500).json({success:false,message:"Error"})
     }
 }
 

@@ -1,19 +1,34 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./Navbar.css"
 import { assets } from '../../assets/assets'
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
+
 const Navbar = ({setShowLogin}) => {
 
-    const[menu,setMenu]=useState("menu");
-
     const{getTotalCartAmount,token,setToken}=useContext(StoreContext);
-
     const navigate = useNavigate(); 
+    const [userImage, setUserImage] = useState(null);
+    const[menu,setMenu]=useState("menu");
+    
+    useEffect(() => {
+        const storedImage = localStorage.getItem('userImage');
+        if (storedImage) {
+          setUserImage(`http://localhost:4000/${storedImage}`); // Set userImage state to the stored image path
+        }else {
+          setUserImage(assets.profile_icon); // Set default profile icon if no image path found
+        }
+      }, [token]);
+      
+      const handleImageError = () => {
+        setUserImage(null); // Set userImage state to null on image load error
+      };
 
     const logout = () =>{
         localStorage.removeItem("token");
+        localStorage.removeItem("userImage");
         setToken("");
+        setUserImage(null); // Clear userImage state on logout
         navigate("/")
     }
   return (
@@ -31,9 +46,11 @@ const Navbar = ({setShowLogin}) => {
                 <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
                 <div className={getTotalCartAmount()===0?"":"dot"}></div>
             </div>
-            {!token?<button onClick={()=>setShowLogin(true)}>Sign In</button>
-            :<div className='navbar-profile'>
-                <img src={assets.profile_icon} alt=''/>
+            {!token?(
+              <button onClick={()=>setShowLogin(true)}>Sign In</button>)
+            :(<div className='navbar-profile'>{userImage ? (
+                <img src={userImage} alt='Profile Icon' className='profile' onError={handleImageError}/>
+                ) : ( <img className='profile' src={assets.profile_icon} alt=''/>)}
                 <ul className="navbar-profile-dropdown">
                     <li><img src={assets.profile_icon} alt=""/><p>Profile</p></li>
                     <hr/>
@@ -41,7 +58,7 @@ const Navbar = ({setShowLogin}) => {
                     <hr/>
                     <li onClick={logout}><img src={assets.logout_icon} alt=""/><p>Logout</p></li>
                 </ul>
-            </div>}   
+            </div>)}   
         </div>
     </div>
   )

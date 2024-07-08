@@ -73,6 +73,10 @@
     outline:2px solid white;
     list-style:none;
 }
+.navbar-profile .profile{
+    width:60px;
+    border-radius: 9999px;
+}
 .navbar-profile-dropdown li{
     display: flex;
     align-items:center;
