@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 
 //app config
 const app=express()
-const port=4000
+const port=process.env.PORT || 4000;
 
 //middleware
 app.use(express.json())
@@ -24,8 +24,8 @@ app.use(cors())
 connectDB();
 
 //api endpoints
-app.use('/api/food',foodRouter)
 app.use('/images',express.static('uploads'))
+app.use('/api/food',foodRouter)
 app.use('/user-uploads', express.static(path.join(__dirname, 'user-uploads')))
 app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
