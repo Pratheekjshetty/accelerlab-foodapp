@@ -145,7 +145,7 @@ const editUser = async (req, res) => {
 //get user
 const getUser = async (req, res) => {
     try {
-        const userId = req.userId; // Assuming userId is set by authMiddleware
+        const userId = req.userId;// Assuming userId is set by authMiddleware
         const user = await userModel.findById(userId).select('-password'); // Exclude password from selection
 
         if (!user) {
