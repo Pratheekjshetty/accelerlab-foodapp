@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './GetProfile.css'
 import axios from 'axios';
 import upload_area from '../../assets/upload_area1.png'
+import getprofile from '../../assets/getprofile.jpg'
 import { toast } from 'react-toastify';
 
 const GetProfile = ({ url }) => {
@@ -122,7 +123,7 @@ const GetProfile = ({ url }) => {
   if (!user) return <div>No User details available</div>;
 
   return (
-    <div className='get-profile-container'>
+    <div className='get-profile-container' style={{ backgroundImage: `url(${getprofile})`,backgroundSize: 'cover',backgroundPosition: 'center',}}>
     {!isEditing ? (
     <div className='get-profile'>
       <div className="get-profile-div">

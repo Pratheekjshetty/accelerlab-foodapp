@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .get-profile{
-    width: 80%;
+     width: 80%;
      margin-left: 2.5rem;
      margin-right: 2.5rem; 
      margin-top: 5rem;
@@ -47,25 +47,28 @@
     border:none;
     font-size: 0.875rem;
 }
-@media (min-width: 1536px) {
+@media (min-width: 640px) {
     .get-profile {
-      width: 25%;
+      width: 60%;
     }
   }
-@media (min-width: 1024px) { 
-    .get-profile {
-      width: 30%;
-      margin-left: 5rem; 
-      margin-right: 5rem; 
-    }
-  }
-@media (min-width: 768px) { 
+  
+  @media (min-width: 768px) {
     .get-profile {
       width: 45%;
     }
   }
-@media (min-width: 640px) {
+  
+  @media (min-width: 1200px) {
     .get-profile {
-      width: 60%;
+      width: 30%;
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .get-profile {
+      width: 25%;
     }
   }
