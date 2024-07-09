@@ -52,7 +52,7 @@ const Navbar = ({setShowLogin}) => {
                 <img src={userImage} alt='Profile Icon' className='profile' onError={handleImageError}/>
                 ) : ( <img className='profile' src={assets.profile_icon} alt=''/>)}
                 <ul className="navbar-profile-dropdown">
-                    <li><img src={assets.profile_icon} alt=""/><p>Profile</p></li>
+                    <li onClick={()=>navigate('/get-profile')}><img src={assets.profile_icon} alt=""/><p>Profile</p></li>
                     <hr/>
                     <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt=""/><p>Orders</p></li>
                     <hr/>
