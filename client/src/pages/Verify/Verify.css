@@ -9,7 +9,7 @@
     border:5px solid #bdbdbd;
     border-top-color:rgb(220, 220, 4);
     border-radius: 50%;
-    animation: rotate 1s infinite;;
+    animation: rotate 1s infinite;
 }
 @keyframes rotate {
     100%{

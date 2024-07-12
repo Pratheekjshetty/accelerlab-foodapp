@@ -3,7 +3,7 @@ import './Order.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { assets } from '../../assets/assets';
-const Order = ({url}) => {
+const Order = ({url}) => { 
   const [orders,setOrders] = useState([]);
 
   const fetchAllOrders =useCallback(async()=>{
@@ -15,7 +15,8 @@ const Order = ({url}) => {
       } else {
         toast.error("Failed to fetch orders");
       }
-    } catch (err) {
+    } 
+    catch (err) {
       toast.error("An error occurred while fetching orders");
       console.error(err);
     }

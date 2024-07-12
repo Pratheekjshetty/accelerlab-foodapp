@@ -57,9 +57,8 @@ const verifyOrder = async(req,res)=>{
         }
     }
     catch(err){
-
         console.log(err);
-        res.json({success:false,message:"Error"})
+        res.json({success:false,message:"Error updating payment status"})
     }
 }
 
