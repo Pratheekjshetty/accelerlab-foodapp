@@ -14,6 +14,7 @@ const Add = ({url}) => {
     price:"",
     category:"Salad"
   })
+  
   const onChangeHandler =(event)=>{
     const name = event.target.name;
     const value = event.target.value;
