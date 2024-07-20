@@ -11,7 +11,7 @@ const List = ({ url }) => {
 
   const fetchList = useCallback(async () => {
     try {
-      const response = await axios.get(`${url}/api/food/list`);
+      const response = await axios.get(`${url}/api/food/listactive-food`);
       console.log(response.data);
       if (response.data.success) {
         setList(response.data.data);
@@ -25,7 +25,7 @@ const List = ({ url }) => {
 
   const removeFood = async (foodId) => {
     try {
-      const response = await axios.post(`${url}/api/food/remove`, { id: foodId });
+      const response = await axios.put(`${url}/api/food/deactivate-food`, { id: foodId });
       await fetchList();
       if (response.data.success) {
         toast.success(response.data.message);

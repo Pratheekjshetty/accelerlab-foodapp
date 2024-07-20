@@ -18,10 +18,21 @@ const addFood = async(req,res)=>{
         res.json({success:false,message:"Error"})
     }
 }
-//list food
+//list all food
 const listFood =async(req,res)=>{
     try{
         const foods=await foodModel.find({});
+        res.json({success:true,data:foods})
+    }
+    catch(err){
+        console.log(err)
+        res.json({success:false,message:"Error"})
+    }
+}
+//list active food
+const listActiveFood =async(req,res)=>{
+    try{
+        const foods=await foodModel.find({is_Active: "1"});
         res.json({success:true,data:foods})
     }
     catch(err){
@@ -42,4 +53,20 @@ const removeFood=async(req,res)=>{
         res.json({success:false,message:"Error"})
     }
 }
-export {addFood,listFood,removeFood}
+//deactivate food
+const deactivateFood=async(req,res)=>{
+    try{
+        const food =await foodModel.findById(req.body.id);
+        if (!food) {
+            return res.json({ success: false, message: "Food not found" });
+        }
+        food.is_Active = "0";
+        await food.save();
+        res.json({ success: true, message: "Food Deactivated" });
+    }
+    catch(err){
+        console.log(err)
+        res.json({success:false,message:"Error"})
+    }
+}
+export {addFood,listFood,listActiveFood,removeFood,deactivateFood}
