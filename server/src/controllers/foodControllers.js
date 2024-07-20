@@ -69,4 +69,36 @@ const deactivateFood=async(req,res)=>{
         res.json({success:false,message:"Error"})
     }
 }
-export {addFood,listFood,listActiveFood,removeFood,deactivateFood}
+//edit food
+const editFood =async(req,res)=>{
+    try{
+        console.log("Request Body:", req.body);
+        const foodId = req.body.id;
+        if (!foodId) {
+            return res.json({ success: false, message: "Food ID not provided" });
+        }
+        console.log("Food ID:", foodId);
+        const food = await foodModel.findById(foodId);
+        if (!food) {
+            return res.json({ success: false, message: "Food not found" });
+        }
+
+        // If a new image is uploaded, replace the old one
+        if (req.file) {
+            console.log("Replacing image:", food.image);
+            fs.unlink(`uploads/${food.image}`, () => {});
+            food.image = `${req.file.filename}`;
+        }
+        // Update other car details
+        food.name = req.body.name || food.name;
+        food.description = req.body.description || food.description;
+        food.price = req.body.price || food.price;
+        food.category = req.body.category || food.category;
+        await food.save();
+        res.json({ success: true, message: "Food Updated" });
+    }catch(err){
+        console.log(err);
+        res.json({ success: false, message: "Error" });
+    }
+}
+export {addFood,listFood,listActiveFood,removeFood,deactivateFood,editFood}
