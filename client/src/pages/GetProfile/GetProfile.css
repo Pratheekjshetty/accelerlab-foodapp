@@ -31,6 +31,10 @@
 .get-div{
     margin: 16px;
 }
+.get-div1{
+  position: relative;
+  margin: 16px;
+}
 .get-button{
     background-color: rgb(220, 220, 4);
     color: white;
@@ -42,11 +46,23 @@
     border-radius: 0.375rem;
 }
 .get-input{
+    width: 100%;
     margin-left: 8px;
     padding: 8px;
     border:none;
     font-size: 0.875rem;
+    border-radius: 0.375rem;
 }
+.toggle-password-visibility {
+  position: absolute;
+  right: 0;
+  top: 1.75rem;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  cursor: pointer;
+}
+
 @media (min-width: 640px) {
     .get-profile {
       width: 60%;

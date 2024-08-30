@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './GetProfile.css'
 import axios from 'axios';
-import upload_area from '../../assets/upload_area1.png'
+import profile_icon from '../../assets/profile_icon.jpg'
+import { FaEye, FaEyeSlash} from 'react-icons/fa';
 import getprofile from '../../assets/getprofile.jpg'
 import { toast } from 'react-toastify';
 
@@ -10,13 +11,17 @@ const GetProfile = ({ url }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
+    confirmPassword: '',
+    role: '',
   });
   const [image, setImage] = useState(null);
-  const [imageUrl, setImageUrl] = useState(upload_area);
+  const [imageUrl, setImageUrl] = useState(profile_icon);
 
   useEffect(() => {
     const fetchUserDetails = async () => {
@@ -38,8 +43,16 @@ const GetProfile = ({ url }) => {
             name: response.data.user.name,
             email: response.data.user.email,
             password: '',
+            confirmPassword: '',
           });
-          setImageUrl(response.data.user.image ? `${url}/${response.data.user.image}` : upload_area);
+          const userImage = response.data.user.image ? `${url}/${response.data.user.image}` : profile_icon;
+          axios.get(userImage)
+          .then(() => {
+            setImageUrl(userImage);
+          })
+          .catch(() => {
+            setImageUrl(profile_icon);
+          });
         } else {
           setError(response.data.message);
         }
@@ -51,6 +64,14 @@ const GetProfile = ({ url }) => {
     };
     fetchUserDetails();
   }, [url]);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);  
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setShowConfirmPassword(!showConfirmPassword);
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -74,6 +95,11 @@ const GetProfile = ({ url }) => {
       return;
     }
 
+    if (formData.password !== formData.confirmPassword) {
+      toast.error('Passwords do not match');
+      return;
+    }
+
     const formDataObj = new FormData();
     formDataObj.append('name', formData.name);
     formDataObj.append('email', formData.email);
@@ -94,15 +120,26 @@ const GetProfile = ({ url }) => {
           name: response.data.user.name,
           email: response.data.user.email,
           password: '',
+          confirmPassword: '',
         });
         setImage(null);
-        setImageUrl(response.data.user.image ? `${url}/${response.data.user.image}` : upload_area);
+        const userImage = response.data.user.image ? `${url}/${response.data.user.image}` : profile_icon;
+        axios.get(userImage)
+        .then(() => {
+          setImageUrl(userImage);
+        })
+        .catch(() => {
+          setImageUrl(profile_icon);
+        });
         setIsEditing(false);
       } else {
         toast.error(response.data.message);
       }
     } catch (err) {
-      toast.error('Error updating profile');
+      const message = err.response && err.response.data && err.response.data.message
+      ? err.response.data.message
+      : 'Error updating profile';
+      toast.error(message);
     }
   };
 
@@ -112,9 +149,17 @@ const GetProfile = ({ url }) => {
       name: user.name,
       email: user.email,
       password: '',
+      confirmPassword: '',
     });
     setImage(null);
-    setImageUrl(user.image ? `${url}/${user.image}` : upload_area);
+    const userImage = user.image ? `${url}/${user.image}` : profile_icon;
+    axios.get(userImage)
+    .then(() => {
+      setImageUrl(userImage);
+    })
+    .catch(() => {
+      setImageUrl(profile_icon);
+    });
     setIsEditing(false);
   };
 
@@ -134,6 +179,9 @@ const GetProfile = ({ url }) => {
       </div>
       <div className='get-div'>
         <p><strong>Email:</strong> {user.email}</p>
+      </div>
+      <div className='get-div'>
+        <p><strong>Role:</strong> {user.role}</p>
       </div>
       <div className='get-profile-button'>
         <button className='get-button' onClick={() => setIsEditing(true)}>Edit Profile</button>
@@ -156,11 +204,21 @@ const GetProfile = ({ url }) => {
         <p><strong>Email:</strong></p>
         <input className='get-input' type="email" name='email' value={formData.email} readOnly/>
       </div>
-      <div className='get-div'>
+      <div className='get-div1'>
         <p><strong>Password:</strong></p>
-        <input className='get-input' type="password" name='password' value={formData.password} onChange={handleInputChange} placeholder='Enter new password'/>
+        <input className='get-input' type={showPassword?"text" : "password"} name='password' value={formData.password} onChange={handleInputChange} placeholder='Enter new password'/>
+        <span onClick={togglePasswordVisibility} className="toggle-password-visibility">
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </span>
       </div>
-      <div className='get-profile-button'>
+      <div className='get-div1'>
+        <p><strong>Confirm Password:</strong></p>
+        <input className='get-input' type={showConfirmPassword?'text' : 'password'} name="confirmPassword" value={formData.confirmPassword} onChange={handleInputChange} placeholder="Confirm your password"/>
+        <span onClick={toggleConfirmPasswordVisibility} className="toggle-password-visibility">
+            {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+        </span>
+      </div>
+      <div className='get-profile-button relative'>
         <button className='get-button' type='submit'>Update</button>&nbsp;&nbsp;
         <button className='get-button' onClick={handleCancel}>Cancel</button>
       </div>

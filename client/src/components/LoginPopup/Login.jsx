@@ -6,9 +6,9 @@ import upload_area from '../../assets/upload_area.png'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Login = ({setShowLogin}) => {
-
     const [image,setImage] = useState(false);
     const {url,setToken} = useContext(StoreContext)
     const[currState,setCurrState]=useState("Login")
@@ -19,16 +19,23 @@ const Login = ({setShowLogin}) => {
     })
 
     const navigate = useNavigate();
-
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
     const onChangeHandler =(event)=>{
         const name = event.target.name;
         const value = event.target.value;
         setData(data=>({...data,[name]:value}))
-    }
+    };
+
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
       };
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(!showConfirmPassword);
+      };
+
     const onLogin =async(event) =>{
         event.preventDefault()
         let newUrl = url;
@@ -57,6 +64,7 @@ const Login = ({setShowLogin}) => {
             setToken(response.data.token);
             localStorage.setItem("token",response.data.token);
             localStorage.setItem("userImage", response.data.image);
+            toast.success('Login successfully');
 
             if (response.data.role === 'admin') {
                 window.open('http://localhost:3001/', '_blank');
@@ -67,16 +75,14 @@ const Login = ({setShowLogin}) => {
             }
         }
         else{
-            alert(response.data.message);
+            toast.error(response.data.message || 'Failed to login/register. Please check your details and try again.');
         }
     }catch (error) {
         console.error('Login/Register error:', error);
-        alert('Failed to login/register. Please check your details and try again.');
+        toast.error(error.response?.data?.message || 'Failed to login/register. Please check your details and try again.');
     }
 };
-    // useEffect(()=>{
-    //     console.log(data);
-    // },[data])
+
   return (
     <div className='login'>
         <form onSubmit={onLogin} className='login-container'>
@@ -98,6 +104,14 @@ const Login = ({setShowLogin}) => {
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
                     </span>
                 </div>
+                {currState !== "Login" && (
+                <div style={{ position: 'relative', display: 'inline-block', width: '100%' }}>
+                    <input name='confirmPassword' onChange={onChangeHandler} value={data.confirmPassword} type={showConfirmPassword ? "text" : "password"} placeholder='Confirm your Password' required style={{ width: '100%', paddingRight: '40px' }} />
+                    <span onClick={toggleConfirmPasswordVisibility} style={{ position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}>
+                        {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                    </span>
+                </div>
+                )}
             </div>
             <button type='submit'>{currState==="Sign Up"?"Sign Up":"Login"}</button>
             <div className="login-condition">

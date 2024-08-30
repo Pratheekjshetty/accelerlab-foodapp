@@ -6,7 +6,8 @@ const userSchema =new mongoose.Schema({
     password:{type:String,required:true},
     image:{type:String,required:true},
     cartData:{type:Object,default:{}},
-    role: { type: String, required: true, default: 'user' }
+    role: { type: String, required: true, default: 'user' },
+    is_Active:{type:String,default:"1"}
 },{minimize:false})
 
 const userModel = mongoose.models.user || mongoose.model("user",userSchema);
