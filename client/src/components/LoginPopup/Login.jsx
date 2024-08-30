@@ -99,7 +99,7 @@ const Login = ({setShowLogin}) => {
                 <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Your Name' required/></>}  
                 <input name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Your Email'required/>
                 <div style={{ position: 'relative', display: 'inline-block', width: '100%' }}>
-                    <input name='password' onChange={onChangeHandler} value={data.password} type={showPassword?"text":"password"} placeholder='Password'required style={{ width: '100%', paddingRight: '40px' }}/>
+                    <input name='password' onChange={onChangeHandler} value={data.password} type={showPassword?"text":"password"} placeholder='Enter Password' required style={{ width: '100%', paddingRight: '40px' }}/>
                     <span onClick={togglePasswordVisibility} style={{position: 'absolute',right: 10,top: '50%',transform: 'translateY(-50%)',cursor: 'pointer'}}>
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
                     </span>

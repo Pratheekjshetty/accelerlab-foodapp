@@ -89,6 +89,9 @@
 .navbar-profile-dropdown li:hover{
     color:rgb(220, 220, 4);
 }
+.img{
+    border-radius:100%;
+}
 @media (max-width:1050px) {
     .navbar.logo{
         width: 140px;

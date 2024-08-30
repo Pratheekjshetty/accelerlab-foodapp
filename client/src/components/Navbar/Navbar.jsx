@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./Navbar.css"
 import { assets } from '../../assets/assets'
+import profile_icon from '../../assets/profile_icon.jpg'
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
@@ -52,7 +53,7 @@ const Navbar = ({setShowLogin}) => {
                 <img src={userImage} alt='Profile Icon' className='profile' onError={handleImageError}/>
                 ) : ( <img className='profile' src={assets.profile_icon} alt=''/>)}
                 <ul className="navbar-profile-dropdown">
-                    <li onClick={()=>navigate('/get-profile')}><img src={assets.profile_icon} alt=""/><p>Profile</p></li>
+                    <li onClick={()=>navigate('/get-profile')}><img src={profile_icon} className='img' alt=""/><p>Profile</p></li>
                     <hr/>
                     <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt=""/><p>Orders</p></li>
                     <hr/>
